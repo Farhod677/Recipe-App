@@ -52,7 +52,7 @@ export default function RecipeEdit({ recipe, setActiveRecipe, handleRecipeChange
                 <div>Amount</div>
                 <div></div>
                 { ingredients.map(ingredient => (
-                    <RecipeIngredientEdit key={uuid} handleIngredientDelete={handleIngredientDelete} handleIngredientChange={handleIngredientChange} key={ingredient.id} ingredient={ingredient}/>
+                    <RecipeIngredientEdit handleIngredientDelete={handleIngredientDelete} handleIngredientChange={handleIngredientChange} key={ingredient.id} ingredient={ingredient}/>
                 )) }
             </div>
             <div className='add-ingredient-btn-container'>
